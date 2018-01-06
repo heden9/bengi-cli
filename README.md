@@ -1,4 +1,4 @@
-# dva-cli
+# bengi-cli
 [![NPM version](https://img.shields.io/npm/v/bengi-cli.svg?style=flat)](https://npmjs.org/package/bengi-cli)
 [![NPM downloads](http://img.shields.io/npm/dm/bengi-cli.svg?style=flat)](https://npmjs.org/package/bengi-cli)
 
