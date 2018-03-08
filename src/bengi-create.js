@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const path = require('path');
 const chalk = require('chalk');
 
 function success (message) {
@@ -6,12 +7,13 @@ function success (message) {
 }
 exports.run = function (name) {
   const projectName = name;
+  const cwd = path.join(__dirname, '../packages', 'dvaSSR');
   const dest = process.cwd();
   fs.pathExists(projectName, (err, exists) => {
     if (exists) {
       console.log(chalk.red('Existing directory here, please run new command for an empty folder! 😢'));
     } else {
-      fs.copy('/usrs/local/lib/node_modules/bengi-cli/packages/dvaSSR', projectName, err => {
+      fs.copy(cwd, projectName, err => {
         if (err) return console.error(err);
 
         printSuccess();

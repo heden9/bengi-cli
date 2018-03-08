@@ -1,6 +1,6 @@
 {
   "name": "bengi-cli",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "The dva-ssr command line utility.",
   "main": "index.js",
   "scripts": {
